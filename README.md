@@ -1,2 +1,2 @@
 # textcoloroverflow
-vstinrty.github.io/textcoloroverflow/
+https://vstinrty.github.io/textcoloroverflow/
