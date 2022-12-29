@@ -1,0 +1,49 @@
+/* Custom colors */
+:root {
+    --black: #000;
+    --yellow: #fce21b;
+    --white: #fff;
+    
+    --bg: var(--white);
+    --text: var(--black);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: var(--black);
+      --text: var(--white);
+    }
+  }
+  
+  .bg-bg { background-color: var(--bg) }
+  .text-text { color: var(--text); }
+  
+  /* Custom font */
+  @font-face {
+      font-family: 'cornerstone';
+      src: url('https://assets.codepen.io/269005/Cornerstone.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+  }
+  
+  .font-cornerstone {
+    font-family: cornerstone, sans-serif;
+  }
+  
+  /* Stripes */
+  .stripes {
+    background-image:
+      linear-gradient(
+        180deg, 
+        transparent 6.25%,
+        var(--yellow) 0, var(--yellow) 25%,
+        transparent 0, transparent 40.625%,
+        var(--yellow) 0, var(--yellow) 59.375%,
+        transparent 0, transparent 75%,
+        var(--yellow) 0, var(--yellow) 93.75%,
+        transparent 0, transparent
+      );
+    width: 100%;
+    height: 3rem;
+  }
+  
